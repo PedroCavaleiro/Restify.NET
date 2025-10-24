@@ -32,9 +32,9 @@ jobs:
       - name: Pack
         run: dotnet pack RestifyNet/RestifyNet.sln --configuration Release --no-build -o ./packages
 
-      - name: Publish to NuGet
-        if: github.event.action == 'created'
-        run: dotnet nuget push ./packages/*.nupkg --skip-duplicate --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+      #- name: Publish to NuGet
+      #  if: github.event.action == 'created'
+      #  run: dotnet nuget push ./packages/*.nupkg --skip-duplicate --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
 
       - name: Publish to GitHub Packages
         if: github.event.action == 'created'
