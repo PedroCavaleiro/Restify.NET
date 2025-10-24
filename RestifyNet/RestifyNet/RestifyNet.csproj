@@ -17,7 +17,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Analyzer Include="..\DescribableEnumAnalyzer\bin\Debug\netstandard2.0\DescribableEnumAnalyzer.dll" />
+      <Analyzer Include="..\DescribableEnumAnalyzer\bin\Release\netstandard2.0\DescribableEnumAnalyzer.dll" />
     </ItemGroup>
 
     <ItemGroup>
