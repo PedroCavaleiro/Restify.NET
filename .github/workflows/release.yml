@@ -17,6 +17,12 @@ jobs:
         with:
           dotnet-version: 9.0.x
 
+      - name: Restore DescribableEnumAnalyzer
+        run: dotnet restore RestifyNet/DescribableEnumAnalyzer/DescribableEnumAnalyzer.csproj
+
+      - name: Build DescribableEnumAnalyzer
+        run: dotnet build RestifyNet/DescribableEnumAnalyzer/DescribableEnumAnalyzer.csproj --configuration Release --no-restore
+
       - name: Restore dependencies
         run: dotnet restore RestifyNet/RestifyNet.sln
 
