@@ -18,13 +18,13 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Restore dependencies
-        run: dotnet restore src/Sharpflake.csproj
+        run: dotnet restore RestifyNet/Sharpflake.csproj
 
       - name: Build
-        run: dotnet build src/Sharpflake.csproj --configuration Release --no-restore
+        run: dotnet build RestifyNet/RestifyNet.sln --configuration Release --no-restore
 
       - name: Pack
-        run: dotnet pack src/Sharpflake.csproj --configuration Release --no-build -o ./packages
+        run: dotnet pack RestifyNet/RestifyNet.sln --configuration Release --no-build -o ./packages
 
       - name: Publish to NuGet
         if: github.event.action == 'created'
