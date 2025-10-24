@@ -18,7 +18,7 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Restore dependencies
-        run: dotnet restore RestifyNet/Sharpflake.csproj
+        run: dotnet restore RestifyNet/RestifyNet.sln
 
       - name: Build
         run: dotnet build RestifyNet/RestifyNet.sln --configuration Release --no-restore
