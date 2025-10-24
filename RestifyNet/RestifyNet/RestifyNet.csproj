@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Restify.NET</Title>
+        <Authors>Pedro Cavaleiro</Authors>
+        <Description>A easy to use Restify.NET client</Description>
+        <Copyright>Pedro Cavaleiro © 2025</Copyright>
+        <PackageProjectUrl>https://github.com/PedroCavaleiro/Restify.NET</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/PedroCavaleiro/Restify.NET/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/PedroCavaleiro/Restify.NET</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageId>Restify.NET</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Analyzer Include="..\DescribableEnumAnalyzer\bin\Debug\netstandard2.0\DescribableEnumAnalyzer.dll" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SharpExtended" Version="1.5.0" />
+    </ItemGroup>
+
+</Project>
